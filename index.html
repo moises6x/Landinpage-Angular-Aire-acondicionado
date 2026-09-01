@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags Primarios -->
+  <title>Airclim | Climatización, Refrigeración y Aire Acondicionado en Lima y Provincias</title>
+  <meta name="description" content="Especialistas en instalación, mantenimiento y reparación de aire acondicionado, cámaras frigoríficas, chillers y ventilación mecánica en Lima y todo el Perú. Atención 24/7." />
+  <meta name="keywords" content="aire acondicionado lima, climatizacion peru, mantenimiento aire acondicionado, reparacion vrf, chillers callao, ventilacion mecanica, refrigeracion comercial lima, airclim" />
+  <meta name="author" content="Airclim Perú" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://airclim.com.pe/" />
+
+  <!-- Open Graph / Redes Sociales (Facebook, WhatsApp) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Airclim | Climatización y Refrigeración en Lima y Provincias" />
+  <meta property="og:description" content="Servicios de ingeniería térmica, mantenimiento preventivo y correctivo de aire acondicionado y refrigeración." />
+  <meta property="og:image" content="img/01.webp" />
+  <meta property="og:locale" content="es_PE" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css?v=2.0" />
+
+  <!-- Datos Estructurados JSON-LD para Google (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "Airclim - HVAC Master",
+    "image": "img/01.webp",
+    "telephone": "+51924161281",
+    "email": "yonatanmejia@airclim.com.pe",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Manzana D Lote 11",
+      "addressLocality": "Callao",
+      "postalCode": "15112",
+      "addressCountry": "PE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -12.015,
+      "longitude": -77.125
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+  <!-- Canvas de partículas y brisa fría -->
+  <canvas id="windParticles"></canvas>
+
+  <!-- Barra de progreso superior -->
+  <div class="scroll-progress-bar" id="progressBar"></div>
+
+  <!-- Barra de Navegación Dinámica -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#intro" class="logo">
+        <span class="logo-dot"></span>
+        <span class="logo-accent">HVAC</span>MASTER
+      </a>
+
+      <!-- Botón Hamburguesa para Móviles -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir Menú de Navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Enlaces de Navegación a todas las secciones -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#intro" class="nav-item">Inicio</a>
+        <a href="#servicios" class="nav-item">Servicios</a>
+        <a href="#ventajas" class="nav-item">¿Por qué elegirnos?</a>
+        <a href="#sectores" class="nav-item">Sectores</a>
+        <a href="#cobertura" class="nav-item">Cobertura</a>
+        <a href="#contacto" class="btn-nav">Cotizar Proyecto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECCIÓN 0: Video Hero con Desvanecimiento Continuo -->
+    <section class="video-hero-section" id="intro">
+      <div class="video-wrapper">
+        <video 
+          id="heroVideo" 
+          playsinline 
+          muted 
+          loop 
+          preload="auto"
+          src="video/PixVerse_V6_Image_Text_540P_Photorealistic_8K_.mp4">
+        </video>
+      </div>
+      
+      <div class="video-content">
+        <h1>El Viaje del Aire Puro</h1>
+        <p>De la ingeniería en azoteas al confort silencioso en tus espacios.</p>
+        <a href="#servicios" class="scroll-down-hint">
+          <span>Desliza para explorar</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </a>
+      </div>
+
+      <div class="video-bottom-fade"></div>
+    </section>
+
+    <!-- SECCIÓN 1: NUESTROS SERVICIOS (TEXTOS CORTOS Y BOTÓN CORPORATIVO) -->
+    <section class="services-section" id="servicios">
+      <div class="services-container">
+        
+        <div class="services-header">
+          <h2>Nuestros Servicios</h2>
+          <p class="section-subtitle">¿Qué necesitas hoy?</p>
+          <div class="faded-divider"></div>
+        </div>
+
+        <!-- Pista del Carrusel -->
+        <div class="services-carousel-wrapper">
+          <div class="services-carousel-track">
+
+            <!-- BLOQUE 1 -->
+            <!-- SERVICIO 01 -->
+            <article class="service-card">
+              <div class="service-card-bg" style="background-image: url('img/01.webp');"></div>
+              <div class="service-card-content">
+                <span class="service-number">01</span>
+                <h3>Instalación de Sistemas Térmicos</h3>
+                <p class="service-desc">Montaje profesional de aire acondicionado, refrigeración comercial y ventilación con ingeniería certificada.</p>
+                <div class="service-tags">
+                  <span>Oficinas</span>
+                  <span>Locales</span>
+                  <span>Industrias</span>
+                </div>
+                <a href="https://wa.me/51924161281?text=Hola%20Airclim,%20deseo%20cotizar%20el%20servicio%20de%20*Instalaci%C3%B3n%20de%20Sistemas%20T%C3%A9rmicos*." target="_blank" class="service-card-btn">
+                  <span>Cotizar este Servicio</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- SERVICIO 02 -->
+            <article class="service-card">
+              <div class="service-card-bg" style="background-image: url('img/02.webp');"></div>
+              <div class="service-card-content">
+                <span class="service-number">02</span>
+                <h3>Mantenimiento Preventivo & Correctivo</h3>
+                <p class="service-desc">Planes de mantenimiento periódicos para maximizar la vida útil de tus equipos y evitar paradas costosas.</p>
+                <div class="service-tags">
+                  <span>Menos Consumo</span>
+                  <span>Cero Paradas</span>
+                </div>
+                <a href="https://wa.me/51924161281?text=Hola%20Airclim,%20deseo%20cotizar%20el%20servicio%20de%20*Mantenimiento%20Preventivo*." target="_blank" class="service-card-btn">
+                  <span>Cotizar este Servicio</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- SERVICIO 03 -->
+            <article class="service-card">
+              <div class="service-card-bg" style="background-image: url('img/03.webp');"></div>
+              <div class="service-card-content">
+                <span class="service-number">03</span>
+                <h3>Reparación & Diagnóstico Urgente</h3>
+                <p class="service-desc">Diagnóstico técnico en primera visita con instrumental calibrado para chillers, VRF y ventilación.</p>
+                <div class="service-tags">
+                  <span>Diagnóstico 1ra Visita</span>
+                  <span>Atención 24/7</span>
+                </div>
+                <a href="https://wa.me/51924161281?text=Hola%20Airclim,%20deseo%20cotizar%20la%20*Reparaci%C3%B3n%20de%20Equipos*." target="_blank" class="service-card-btn">
+                  <span>Cotizar este Servicio</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- SERVICIO 04 -->
+            <article class="service-card">
+              <div class="service-card-bg" style="background-image: url('img/04.webp');"></div>
+              <div class="service-card-content">
+                <span class="service-number">04</span>
+                <h3>Proyectos de Ingeniería HVAC</h3>
+                <p class="service-desc">Expedientes técnicos completos con planos referenciales, memoria de cálculo y diseño térmico a medida.</p>
+                <div class="service-tags">
+                  <span>Planos Técnicos</span>
+                  <span>Cálculo Térmico</span>
+                </div>
+                <a href="https://wa.me/51924161281?text=Hola%20Airclim,%20deseo%20cotizar%20un%20*Proyecto%20de%20Ingenier%C3%ADa%20HVAC*." target="_blank" class="service-card-btn">
+                  <span>Cotizar este Servicio</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- BLOQUE 2 (Duplicado para loop continuo) -->
+            <article class="service-card" aria-hidden="true">
+              <div class="service-card-bg" style="background-image: url('img/01.webp');"></div>
+              <div class="service-card-content">
+                <span class="service-number">01</span>
+                <h3>Instalación de Sistemas Térmicos</h3>
+                <p class="service-desc">Montaje profesional de aire acondicionado, refrigeración comercial y ventilación con ingeniería certificada.</p>
+                <div class="service-tags">
+                  <span>Oficinas</span>
+                  <span>Locales</span>
+                  <span>Industrias</span>
+                </div>
+                <a href="https://wa.me/51924161281?text=Hola%20Airclim,%20deseo%20cotizar%20el%20servicio%20de%20*Instalaci%C3%B3n%20de%20Sistemas%20T%C3%A9rmicos*." target="_blank" class="service-card-btn">
+                  <span>Cotizar este Servicio</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="service-card" aria-hidden="true">
+              <div class="service-card-bg" style="background-image: url('img/02.webp');"></div>
+              <div class="service-card-content">
+                <span class="service-number">02</span>
+                <h3>Mantenimiento Preventivo & Correctivo</h3>
+                <p class="service-desc">Planes de mantenimiento periódicos para maximizar la vida útil de tus equipos y evitar paradas costosas.</p>
+                <div class="service-tags">
+                  <span>Menos Consumo</span>
+                  <span>Cero Paradas</span>
+                </div>
+                <a href="https://wa.me/51924161281?text=Hola%20Airclim,%20deseo%20cotizar%20el%20servicio%20de%20*Mantenimiento%20Preventivo*." target="_blank" class="service-card-btn">
+                  <span>Cotizar este Servicio</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="service-card" aria-hidden="true">
+              <div class="service-card-bg" style="background-image: url('img/03.webp');"></div>
+              <div class="service-card-content">
+                <span class="service-number">03</span>
+                <h3>Reparación & Diagnóstico Urgente</h3>
+                <p class="service-desc">Diagnóstico técnico en primera visita con instrumental calibrado para chillers, VRF y ventilación.</p>
+                <div class="service-tags">
+                  <span>Diagnóstico 1ra Visita</span>
+                  <span>Atención 24/7</span>
+                </div>
+                <a href="https://wa.me/51924161281?text=Hola%20Airclim,%20deseo%20cotizar%20la%20*Reparaci%C3%B3n%20de%20Equipos*." target="_blank" class="service-card-btn">
+                  <span>Cotizar este Servicio</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="service-card" aria-hidden="true">
+              <div class="service-card-bg" style="background-image: url('img/04.webp');"></div>
+              <div class="service-card-content">
+                <span class="service-number">04</span>
+                <h3>Proyectos de Ingeniería HVAC</h3>
+                <p class="service-desc">Expedientes técnicos completos con planos referenciales, memoria de cálculo y diseño térmico a medida.</p>
+                <div class="service-tags">
+                  <span>Planos Técnicos</span>
+                  <span>Cálculo Térmico</span>
+                </div>
+                <a href="https://wa.me/51924161281?text=Hola%20Airclim,%20deseo%20cotizar%20un%20*Proyecto%20de%20Ingenier%C3%ADa%20HVAC*." target="_blank" class="service-card-btn">
+                  <span>Cotizar este Servicio</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- SECCIÓN 2: ¿Por qué elegirnos? (Fondo Oscuro Compacto) -->
+    <section class="why-us-section" id="ventajas">
+      <div class="why-us-container">
+        
+        <div class="why-us-header">
+          <h2>¿Por qué elegirnos?</h2>
+          <p>La combinación perfecta entre ingeniería de precisión y atención dedicada.</p>
+        </div>
+
+        <div class="benefits-grid">
+          
+          <div class="benefit-card">
+            <div class="b-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Experiencia comprobada a nivel nacional</h3>
+            <p>+5 años liderando proyectos de climatización y refrigeración comercial e industrial en todo el país.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="b-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><polyline points="20 8 20 14 16 10"/></svg>
+            </div>
+            <h3>Equipo de técnicos certificados</h3>
+            <p>Mantenemos un procedimiento profesional estricto en cada paso de nuestro proceso de trabajo.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="b-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Transparencia en los servicios</h3>
+            <p>Construimos relaciones duraderas con nuestros clientes basadas íntegramente en la honestidad y confianza.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="b-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>Garantía y soporte 24/7</h3>
+            <p>Brindamos respuesta prioritaria inmediata y efectiva frente a problemas críticos y emergencias operativas.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: SECTORES EN LOS QUE ATENDEMOS (CARTILLAS ALINEADAS) -->
+    <section class="sectors-section" id="sectores">
+      <div class="sectors-container">
+        
+        <div class="sectors-header">
+          <h2>Sectores en los que atendemos</h2>
+          <p>Soluciones térmicas e ingeniería de climatización adaptadas a la normativa de cada industria.</p>
+          <div class="faded-divider"></div>
+        </div>
+
+        <div class="sectors-grid">
+
+          <!-- SECTOR 1 -->
+          <div class="sector-card">
+            <div class="sector-bg-img" style="background-image: url('img/01.webp');"></div>
+            <div class="sector-content">
+              <div class="sector-icon">🏢</div>
+              <h3>Hogares y edificios residenciales</h3>
+              <p class="sector-desc">Instalamos y cuidamos soluciones silenciosas y seguras para departamentos, casas y áreas comunes.</p>
+              <div class="sector-tags">
+                <span>Residencial</span>
+                <span>Bajo Ruido</span>
+                <span>Confort Térmico</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTOR 2 -->
+          <div class="sector-card">
+            <div class="sector-bg-img" style="background-image: url('img/02.webp');"></div>
+            <div class="sector-content">
+              <div class="sector-icon">💼</div>
+              <h3>Oficinas y corporativo</h3>
+              <p class="sector-desc">Ambientes homogéneos, menos paradas y productividad para tu equipo. Protocolos de seguridad, actas y trazabilidad.</p>
+              <div class="sector-tags">
+                <span>Edificios Corporativos</span>
+                <span>Control Inverter</span>
+                <span>Trazabilidad</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTOR 3 -->
+          <div class="sector-card">
+            <div class="sector-bg-img" style="background-image: url('img/03.webp');"></div>
+            <div class="sector-content">
+              <div class="sector-icon">🛍️</div>
+              <h3>Retail y locales comerciales</h3>
+              <p class="sector-desc">Temperatura confortable para clientes y personal, cuidando vitrinas y costos de energía en centros comerciales.</p>
+              <div class="sector-tags">
+                <span>Centros Comerciales</span>
+                <span>Ahorro Energético</span>
+                <span>Alto Flujo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTOR 4 -->
+          <div class="sector-card">
+            <div class="sector-bg-img" style="background-image: url('img/04.webp');"></div>
+            <div class="sector-content">
+              <div class="sector-icon">🏭</div>
+              <h3>Industria y almacenes/logística</h3>
+              <p class="sector-desc">Continuidad operativa y control térmico en naves, procesos y almacenes. Cumplimos con los más altos estándares técnicos.</p>
+              <div class="sector-tags">
+                <span>Naves Industriales</span>
+                <span>Ventilación Forzada</span>
+                <span>Presurización</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTOR 5 -->
+          <div class="sector-card">
+            <div class="sector-bg-img" style="background-image: url('img/01.webp');"></div>
+            <div class="sector-content">
+              <div class="sector-icon">❄️</div>
+              <h3>Salud & alimentos (cadena de frío)</h3>
+              <p class="sector-desc">Estabilidad estricta de °C y calidad sanitaria en clínicas, laboratorios, supermercados y cuartos fríos.</p>
+              <div class="sector-tags">
+                <span>Cadena de Frío</span>
+                <span>Salas Limpias</span>
+                <span>Norma Sanitaria</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTOR 6 (Especial) -->
+          <div class="sector-card sector-card-cta">
+            <div class="sector-bg-img" style="background-image: url('img/02.webp');"></div>
+            <div class="sector-content">
+              <div class="sector-icon">⚡</div>
+              <h3>¿Cuentas con otro rubro especial?</h3>
+              <p class="sector-desc">Contamos con ingenieros especializados para diseñar soluciones personalizadas a la medida exacta de tu infraestructura.</p>
+              <a href="https://wa.me/51924161281?text=Hola%20Airclim,%20tengo%20un%20proyecto%20de%20climatizaci%C3%B3n%20para%20un%20rubro%20especial." target="_blank" class="sector-btn">
+                <span>Consultar Rubro Especial</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<!-- SECCIÓN 4: NUESTRA COBERTURA (COLLAGE FOTOGRÁFICO DE 8 POLAROIDS) -->
+    <section class="coverage-section" id="cobertura">
+      <div class="coverage-container">
+        
+        <div class="coverage-grid">
+          
+          <!-- Columna Izquierda: Información Concisa -->
+          <div class="coverage-info">
+            <h2>Nuestra Cobertura de Atención</h2>
+            <p class="coverage-highlight">Atendemos a todo Lima Metropolitana y Provincias</p>
+            
+            <p class="coverage-desc">
+              Llegamos a todos los distritos de Lima y departamentos del Perú con cuadrillas técnicas equipadas para instalación rápida, mantenimiento preventivo y respuesta urgente frente a contingencias térmicas.
+            </p>
+          </div>
+
+          <!-- Columna Derecha: Collage de 8 Fotos Superpuestas -->
+          <div class="coverage-collage-wrapper">
+            
+            <!-- Foto 1 -->
+            <div class="polaroid-card p-1">
+              <div class="polaroid-img-box">
+                <img src="img/imgatencion.webp" alt="Atención técnica en campo" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="polaroid-card p-2">
+              <div class="polaroid-img-box">
+                <img src="img/01.webp" alt="Instalación en Lima" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="polaroid-card p-3">
+              <div class="polaroid-img-box">
+                <img src="img/02.webp" alt="Mantenimiento preventivo" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Foto 4 -->
+            <div class="polaroid-card p-4">
+              <div class="polaroid-img-box">
+                <img src="img/03.webp" alt="Diagnóstico especializado" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Foto 5 (Nueva) -->
+            <div class="polaroid-card p-5">
+              <div class="polaroid-img-box">
+                <img src="img/04.webp" alt="Proyectos en plantas" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Foto 6 (Nueva) -->
+            <div class="polaroid-card p-6">
+              <div class="polaroid-img-box">
+                <img src="img/imgatencion.webp" alt="Soporte técnico integral" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Foto 7 -->
+            <div class="polaroid-card p-7">
+              <div class="polaroid-img-box">
+                <img src="img/01.webp" alt="Montaje industrial" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- Foto 8 (Centro / Protagonista) -->
+            <div class="polaroid-card p-8">
+              <div class="polaroid-img-box">
+                <img src="img/02.webp" alt="Cobertura integral Perú" loading="lazy" />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: FORMULARIO DE CONTACTO (UNIDO A COBERTURA) -->
+    <section class="contact-section" id="contacto">
+      <div class="contact-container">
+        
+        <div class="contact-header">
+          <h2>Contáctanos Hoy</h2>
+          <p class="contact-intro">
+            Déjanos los detalles de tu consulta técnica o requerimiento de obra y un especialista se pondrá en contacto contigo en breve.
+          </p>
+          <div class="faded-divider"></div>
+        </div>
+
+        <div class="form-image-grid">
+          <div class="contact-image-wrapper">
+            <img src="img/03.webp" alt="Atención y soporte técnico HVAC Airclim" loading="lazy" />
+          </div>
+
+          <div class="contact-form-card">
+            <h3>Envíanos un Mensaje</h3>
+            <p class="form-desc">Completa los campos para redirigirte con tu cotización estructurada a nuestro canal oficial de WhatsApp.</p>
+
+            <form id="whatsappForm" class="contact-form">
+              <div class="form-group">
+                <label for="formNombre">Nombre Completo</label>
+                <input type="text" id="formNombre" placeholder="Ej. Carlos Mendoza" required />
+              </div>
+
+              <div class="form-group">
+                <label for="formTelefono">Celular o Teléfono</label>
+                <input type="tel" id="formTelefono" placeholder="Ej. 924 123 456" required />
+              </div>
+
+              <div class="form-group">
+                <label for="formConsulta">Describe tu consulta</label>
+                <textarea id="formConsulta" rows="4" placeholder="Cuéntanos sobre el servicio, equipo, capacidad o proyecto que necesitas..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-whatsapp">
+                <span>Enviar Formulario a WhatsApp</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER PRINCIPAL CON DATOS INTEGRADOS LIMPIAMENTE -->
+  <footer class="site-footer">
+    
+    <!-- Mapa de Ubicación -->
+    <div class="footer-map-container">
+      <div class="footer-map-wrapper">
+        <div class="map-overlay-badge">
+          <span>📍 Sede Central: Manzana D Lote 11, Callao 15112, Perú</span>
+        </div>
+        <iframe 
+          title="Ubicación Airclim Callao en Google Maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.3927690184497!2d-77.125!3d-12.015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cd669a8b163d%3A0xc619b02a281ec58!2sCallao%2015112!5e0!3m2!1ses!2spe!4v1700000000000!5m2!1ses!2spe" 
+          width="100%" 
+          height="320" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="footer-main-container">
+      
+      <!-- Grilla Principal del Footer (4 Columnas) -->
+      <div class="footer-grid">
+        
+        <!-- Columna 1: Identidad, Lema y Datos de Contacto Directos -->
+        <div class="footer-col footer-about">
+          <a href="#intro" class="logo">
+            <span class="logo-dot"></span>
+            <span class="logo-accent">HVAC</span>MASTER
+          </a>
+          
+          <blockquote class="footer-quote">
+            «Más de 5 años ayudando a clientes y empresas con ingeniería, responsabilidad y confianza.»
+          </blockquote>
+          
+          <!-- Lista de Contacto Directo Integrada -->
+          <div class="footer-direct-contact">
+            <div class="direct-contact-item">
+              <span class="d-icon">📍</span>
+              <span>Manzana D Lote 11, Callao 15112, Perú</span>
+            </div>
+            
+            <div class="direct-contact-item">
+              <span class="d-icon">📞</span>
+              <div>
+                <a href="tel:+51924161281">+51 924 161 281</a> / 
+                <a href="tel:+51908920033">+51 908 920 033</a>
+              </div>
+            </div>
+            
+            <div class="direct-contact-item">
+              <span class="d-icon">✉️</span>
+              <a href="mailto:yonatanmejia@airclim.com.pe">yonatanmejia@airclim.com.pe</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 2: Menú de Navegación -->
+        <div class="footer-col">
+          <h4 class="footer-title">Menú</h4>
+          <ul class="footer-nav">
+            <li><a href="#intro">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#ventajas">¿Por qué elegirnos?</a></li>
+            <li><a href="#sectores">Sectores</a></li>
+            <li><a href="#cobertura">Cobertura</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: ¿Deseas que te llamemos? -->
+        <div class="footer-col footer-callback">
+          <h4 class="footer-title">¿Deseas que te llamemos?</h4>
+          <p>Déjanos tu número y nuestro personal técnico se comunicará contigo a la brevedad.</p>
+          <form id="footerCallbackForm" class="footer-input-group">
+            <input type="tel" id="callbackPhone" placeholder="Ingresa tu número..." required />
+            <button type="submit" aria-label="Enviar número para llamada">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Columna 4: Canales Directos / Redes -->
+        <div class="footer-col">
+          <h4 class="footer-title">Canales Directos</h4>
+          <div class="footer-social-links">
+            
+            <a href="https://facebook.com" target="_blank" class="social-btn facebook" aria-label="Facebook Oficial Airclim">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Facebook</span>
+            </a>
+
+            <a href="mailto:yonatanmejia@airclim.com.pe" class="social-btn email" aria-label="Correo Electrónico Directo">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Correo Directo</span>
+            </a>
+
+            <a href="https://wa.me/51924161281" target="_blank" class="social-btn whatsapp" aria-label="WhatsApp Oficial Airclim">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.392-10.416c-4.418 0-8 3.582-8 8 0 1.411.365 2.738 1.002 3.896l-1.064 3.89 3.992-1.047c1.116.608 2.392.961 3.75.961 4.418 0 8-3.582 8-8s-3.582-8-8-8zm0 18c-1.258 0-2.439-.344-3.46-0.945l-.248-.145-2.574.675.687-2.507-.159-.253c-.662-1.056-1.03-2.301-1.03-3.625 0-3.75 3.05-6.8 6.8-6.8s6.8 3.05 6.8 6.8-3.05 6.8-6.8 6.8z"/></svg>
+              <span>WhatsApp Directo</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior de Derechos -->
+      <div class="footer-bottom-bar">
+        <p>© 2026 Airclim - HVAC Master. Todos los derechos reservados.</p>
+        <p>Ingeniería Térmica & Climatización Profesional.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE PERMANENTE DE WHATSAPP -->
+  <a 
+    href="https://wa.me/51924161281?text=Hola%20Airclim,%20deseo%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20climatizaci%C3%B3n." 
+    target="_blank" 
+    class="whatsapp-float-btn" 
+    aria-label="Contactar por WhatsApp">
+    
+    <span class="whatsapp-pulse"></span>
+    
+    <svg width="38" height="38" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+
+    <span class="whatsapp-tooltip">¿En qué podemos ayudarte?</span>
+  </a>
+
+  <!-- Script Principal -->
+  <script src="main.js"></script>
+</body>
+</html>
